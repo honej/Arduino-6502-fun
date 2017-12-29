@@ -40,4 +40,9 @@ void send_NOP() {
   digitalWrite(48,HIGH);
 }
 
+void clock_tick() {
+  digitalWrite(clockPin, LOW); 
+  delay(1);
+  digitalWrite(clockPin, HIGH);
+}
 
