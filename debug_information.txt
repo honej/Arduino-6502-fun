@@ -25,7 +25,7 @@ FF1E              .END
 
 
 
-Address bin	- bin	- hex	- R/W	- content of memory bus
+Address bin	- bin	- hex	- R/W	- content of data bus
 
 Honey's device launch
 0000111111111111 - 4095 - FFF - R - 0
