@@ -21,27 +21,23 @@ void setup() {
   pinMode(resetPin, OUTPUT);
   pinMode(rwPin, INPUT);
   memset(m_RAM,234,sizeof(m_RAM)); // reset RAM with NOPs (EA)
-  // m_RAM[65532] = 0;
-  // m_RAM[65533] = 255;
 
   Serial.println("Honey's device launch");
 
-// zero everything but 6502 stack
+// zero everything but 6502 stack - part of debugging, not sure if needed anymore
  for (i=0 ; i < 256 ; i++ ){ 
   m_RAM[i] = 0;
  }
  for (i=512 ; i < 65536 ; i++ ){ 
   m_RAM[i] = 0;
  }
-  
+ 
+ 
  // copy WozMon to RAM 
  for(i = 65280 ; i < 65536 ; i++ ){
     m_RAM[i] = WozMon[i-65280];
 }
 
-
-// m_RAM[57105] = 0;
-// m_RAM[57106] = 0;
 
 // set address bus to INPUT
 for (i = 0; i < 16; ++i)
