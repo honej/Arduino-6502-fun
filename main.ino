@@ -56,7 +56,7 @@ for (i = 0; i < 8; ++i) {
 
 processor_reset();
 for (i = 0; i<8; i++)
-  clock_tick;
+  clock_tick();
 processor_reset();
 
 } // of setup
