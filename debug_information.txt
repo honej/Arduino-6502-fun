@@ -1,6 +1,10 @@
 Problem:
 Why is he trying to read from $DF12 and $DF13 instead of $D012 and $D013 ?
 
+Solution:
+Mistake in wiring. Nevermind ;-)
+
+
 
 Decoded instructions
 
